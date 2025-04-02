@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoIosArrowRoundForward } from "react-icons/io";
+import monitorCardImg from "../assets/monitor-card.webp";
 
 const MonitorSection = () => {
   return (
@@ -16,6 +17,11 @@ const MonitorSection = () => {
                 <IoIosArrowRoundForward className='size-8' />
                 </a>
             </div>
+
+            <div className='md:w-1/2 w-full'>
+                <img src={monitorCardImg} alt="schedule image" className='w-full h-auto' />
+            </div>
+
         </div>
         
     </section>
