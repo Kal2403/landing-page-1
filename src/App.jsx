@@ -20,6 +20,7 @@ function App() {
                 <PurposeSection />
                 <FeaturesSection />
                 <ScheduleSection />
+                <MonitorSection />
             </div>
         </main>
     )
