@@ -21,9 +21,10 @@ function App() {
                 <FeaturesSection />
                 <ScheduleSection />
                 <MonitorSection />
+                <PricingSection />
             </div>
         </main>
-    )
-}
+    );
+};
 
 export default App;
