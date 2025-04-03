@@ -26,6 +26,18 @@ const PricingSection = () => {
                 </div>
             </div>
 
+            <div className='max-w-xl mx-auto'>
+                <p className='text-center text-gray-600 mb-4'>{productCount} products</p>
+
+                <div className='relative px-4'>
+                    <div className='flex items-center gap-2'>
+                        <span className='text-xs sm:text-sm text-gray-600'>1</span>
+                        <input className='flex-1 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer' type="range" min="1" max="50" value={productCount} onChange={(e)=>setProductCount(parseInt(e.target.value))} />
+                        <span>50</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </section>
