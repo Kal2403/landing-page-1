@@ -62,6 +62,19 @@ const ServicesSection = () => {
                     <button className='mt-8 bg-indigo-600 text-white px-8 py-3 cursor-pointer rounded-full hover:bg-indigo-700 transition-colors'>Get Started</button>
                 </div>
 
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+                    {
+                        services.map((service, index) => (
+                            <div key={index} className='bg-white max-w-72 cursor-pointer rounded-2xl p-6 hover:scale-105 hover:shadow-xl transition-all duration-300'>
+                                <div className='mb-4'>{service.icon}</div>
+                                <h3 className='text-xl font-semibold mb-2'>{service.title}</h3>
+                                <p className='text-gray-600 mb-4'>{service.description}</p>
+                                <a href={service.link} className='text-indigo-600 font-medium hover:text-indigo-700 transition-colors'>Learn More</a>
+                            </div>
+                        ))
+                    }
+                </div>
+
             </div>
 
         </section>
