@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
+import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
 const testimonials = [
     {
@@ -55,6 +56,40 @@ const TestimonialSection = () => {
                 <p className='text-gray-500'>Things that make it the best place to start trading</p>
             </div>
 
+            <div className='relative'>
+                <Swiper
+                    navigation={
+                        {
+                            nextEl: '.swiper-button-next-custom',
+                            prevEl: '.swiper-button-prev-custom',
+                        }
+                    }
+                    spaceBetween={10}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    breakpoints={{
+                        0: {
+                            slidesPerView: 1,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                        },
+                    }}
+                    modules={[Navigation]}
+                    className="testimonials-swiper md:mb-12"
+                >
+                    {
+                        testimonials.map((testimonial, index) => (
+                            <SwiperSlide key={index} className='h-full md:py-12 py-4'>
+                            </SwiperSlide>
+                        ))
+                    }
+                </Swiper>
+            </div>
         </section>
     )
 }
