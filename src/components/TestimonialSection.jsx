@@ -102,6 +102,15 @@ const TestimonialSection = () => {
                         ))
                     }
                 </Swiper>
+
+                <div className='flex justify-center gap-4 md:mt-8 mt-4'>
+                    <button className='swiper-button-prev-custom w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-blue-500 hover:text-white transition-all duration-200 cursor-pointer'>
+                        <BsChevronLeft className='size-6' />
+                    </button>
+                    <button className='swiper-button-next-custom w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-blue-500 hover:text-white transition-all duration-200 cursor-pointer'>
+                        <BsChevronRight className='size-6' />
+                    </button>
+                </div>
             </div>
         </section>
     )
