@@ -48,6 +48,24 @@ const Footer = () => {
                             <a href="#" className='w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-blue-600 hover:text-white transition-all duration-200'><FaLinkedin className='size-5' /></a>
                         </div>
                     </div>
+                    <div className='lg:col-span-8'>
+                        <div className='grid grid-cols-2 md:grid-cols-4 gap-8 '>
+                            {
+                                Object.entries(footerLinks).map(([category, links], categoryIndex) => (
+                                    <div key={category}>
+                                        <h3 className='text-lg font-medium mb-4 uppercase'>{category}</h3>
+                                        <ul className='space-y-3'>
+                                            {links.map((link, index) => (
+                                                <li key={index}>
+                                                    <a href="#" className='text-gray-600 hover:text-gray-900'>{link.name}</a>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
 
                 </div>
 
