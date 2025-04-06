@@ -69,6 +69,13 @@ const Footer = () => {
 
                 </div>
 
+                <div className='border-t border-gray-200 mt-12 pt-8'>
+                    <div className='flex flex-col md:flex-row justify-between items-center gap-4'>
+                        <p className='text-gray-600 text-sm'>Copyright © {new Date().getFullYear()} KalTech</p>
+                        <p className='text-600 text-sm'>Created by CCA</p>
+                    </div>
+                </div>
+
             </div>
 
         </footer>
