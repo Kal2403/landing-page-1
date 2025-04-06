@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaFacebookF, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -17,6 +18,11 @@ const Footer = () => {
                             <span className='text-xl font-medium ml-1'>The Next Design</span>
                         </div>
                         <p className='text-gray-600 mb-6 md:w-3/4'>The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times.</p>
+                        <div className='flex gap-4'>
+                            <a href="#" className='w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-blue-600 hover:text-white transition-all duration-200'><FaFacebookF className='size-5' /></a>
+                            <a href="#" className='w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-blue-600 hover:text-white transition-all duration-200'><FaTwitter className='size-5' /></a>
+                            <a href="#" className='w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-blue-600 hover:text-white transition-all duration-200'><FaLinkedin className='size-5' /></a>
+                        </div>
                     </div>
 
                 </div>
